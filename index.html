@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harie Vashini | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      background-color: #ffe6e6;
+      color: #fff;
+      font-family: "Comic Sans MS";
+    }
+    header{
+    	background-color: white;
+   		margin:5px;
+    	position: relative;
+
+    }
+
+    h4,p,li,h5{
+    	color:grey;
+    }
+    #image {
+	  margin-left:80px;
+	  float:right;
+	}
+	#connect{
+		list-style: none;
+	}
+	ul {
+	line-height:300%;
+	}
+    footer {
+	  text-align: center;
+	  margin:5px 5px;
+	  padding: 1%;
+	  color: salmon;
+	  background-color: white;
+	}
+    .u1{
+    	color:#581845;
+    }
+    .u1:hover{
+    	color:rgba(88, 24, 69,0.7);
+    }
+    .u2{
+    	color:#900C3F;
+    }
+    .u2:hover{
+    	color:rgba(144, 12, 63,0.7);
+    }
+    .u3{
+    	color:#C70039;
+    }
+    .u3:hover{
+    	color:rgba(199, 0, 57,0.7);
+    }
+    .navbar-brand {
+      color: salmon;
+      font-size: 50px;
+      
+    }
+    .navbar-brand:hover{
+      color:rgba(250, 128, 114,0.7);
+    }
+
+  </style>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar_styling">
+        <a class="navbar-brand" href="index.html"><b>HARIE VASHINI</b></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto content_styling">
+            <li class="nav-item">
+              <a class="nav-link u1" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link u2" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link u3" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div className="container" id="about" style="background-color: white; margin: 10px 5px;padding:51px;">
+        <div class="row">
+          <div class="column">
+            <h4> Hello! I'm Harie Vashini </h4>
+            <br>
+            <p><img src="images/mypic.jpeg" id="image" alt="Harie" width="300px" height="300px">I am pursuing Master of Science in Computer Science at Portland State University, who expects to graduate in June 2021. Aiming to gain experience in a highly challenging and competitive environment and be part of an institution that demands skill and diligence. At present actively seeking internship opportunities.</p>
+            <h5>EDUCATION</h5>
+            <p>Completed Bachelor's degree in Information Technology with a GPA of 3.75 from Coimbatore Institute Of Technology, India.</p>
+            <h5>AREAS OF INTEREST</h5>
+            <p><li>Machine Learning</li>
+            <li>Artificial Intelligence</li>
+            <li>Web Development</li>
+            <li>Database Management systems</li></p>
+            <h5>SKILLS</h5>
+            <p>Python, C++, JAVA, HTML, CSS, JavaScript, React</p>
+          </div>
+        </div>
+    </div>
+    <div className="container" id="projects" style="background-color: white; margin: 10px 5px;padding:51px;">
+    	<div class="row">
+          <div class="column">
+            <h5>PROJECTS</h5>
+            <p><b>Prediction of Wine quality using Random Forest and Decision Tree</b>, choses to explore Decision tree and Random forest algorithms to predict the wine quality as perceived by a wine drinker on the Wine dataset. The project aims at training the models and experimentally determining the effects of various parameters and comparing the results of both the algorithms.</p>
+            <p><b>Solving the game of 2048 with Artificial Intelligence</b>, is based on Q learning and the design involves the use of neural networks as the function approximation method. In 2048 there are 4 random components, that is, initial configuration of the game, addition of random tiles after very move, exploration of the agent and unavailability of moves. This approach is based on prioritized experience replay where the model trains to learn best game-playing strategy from the experiences collected.</p>
+            <p><b>Custom Kubernetes Scheduler</b>, goal was to develop a custom scheduler for Kubernetes that optimized for a metric different from that of the default scheduler. A custom scheduler that successfully schedules pods on nodes with maximum memory available was developed and tested it against the default one.</p>
+            <p><b>X-rates Dashboard using React</b>, created Web application using React, used HTML, JS to display various features like the current and historic currency exchange rates information of many countries along with currency conversion calculator. React-chartjs was used to display bar and line charts for opening and closing rates of the selected currency.</p>
+			<p><b>MongoDB – NoSQL database</b>, used Freeway dataset to work on MongoDB. Designed a data model, inserted the Freeway data into collections and Executed queries using Pymongo.</p>
+          </div>
+        </div>
+    </div>
+    <div className="container" id="contact" style="background-color: white; margin: 10px 5px;padding:51px;">
+    	<div class="row">
+          <div class="column">
+          	<h5>CONTACT</h5>
+          	<ul>
+	          	<li id="connect"><img src="images/phone.png" height="30px">    (503)-267-4231</li>
+		        <li id="connect"><img src="images/gitt.jpeg" height="30px">  https://github.com/Harievashini </li>
+		        <li id="connect"><img src="images/lin.png" height="30px">  https://www.linkedin.com/in/harie-vashini-dhamodharasamy-kalpana-973ba4172/</li>
+		        <li id="connect"><img src="images/mail.png" height="30px">  harievashini.dk@outlook.com</li>
+		    </ul>
+	      </div>
+	    </div>
+	</div>
+    <footer>
+         Copyright © Harie Vashini 2020 
+    </footer>
+  </body>
+
+</html>
