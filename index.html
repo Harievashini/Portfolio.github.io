@@ -1,138 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harie Vashini | Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-  </head>
-  <style>
-    body {
+<!doctype html>
+<html>
+	<head>
+	<title>Harie Vashini | Portfolio</title>
+	
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<style>
+  body {
       background-color: #ffe6e6;
-      color: #fff;
+      color:grey;
       font-family: "Comic Sans MS";
     }
-    header{
-    	background-color: white;
-   		margin:5px;
-    	position: relative;
-
-    }
-
-    h4,p,li,h5{
-    	color:grey;
-    }
     #image {
-	  margin-left:80px;
-	  float:right;
-	}
-	#connect{
-		list-style: none;
-	}
-	ul {
-	line-height:300%;
-	}
-    footer {
-	  text-align: center;
-	  margin:5px 5px;
-	  padding: 1%;
-	  color: salmon;
-	  background-color: white;
-	}
-      a{
-	  color:grey;
-	}
-    .u1{
-    	color:#581845;
+    margin-left:80px;
+    float:right;
+  }
+  #connect{
+    list-style: none;
+  }
+  #info{
+    line-height: 300%;
+    color:grey;
+  }
+  
+  footer {
+    text-align: center;
+    margin:5px 0px;
+    padding: 1%;
+    color: salmon;
+    background-color: white;
+  }
+
+  h4,p,li,ul,h5{
+      color:grey;
     }
-    .u1:hover{
-    	color:rgba(88, 24, 69,0.7);
-    }
-    .u2{
-    	color:#900C3F;
-    }
-    .u2:hover{
-    	color:rgba(144, 12, 63,0.7);
-    }
-    .u3{
-    	color:#C70039;
-    }
-    .u3:hover{
-    	color:rgba(199, 0, 57,0.7);
-    }
-    .navbar-brand {
-      color: salmon;
-      font-size: 50px;
-      
-    }
-    .navbar-brand:hover{
-      color:rgba(250, 128, 114,0.7);
+  nav{
+    background-color:#ffe6e6;
+    color:#ffe6e6;
+    padding:5px;
+    border-color: grey;
+  }
+  a{
+      color:grey;
     }
 
   </style>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-sm navbar_styling">
-        <a class="navbar-brand" href="index.html"><b>HARIE VASHINI</b></a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto content_styling">
-            <li class="nav-item">
-              <a class="nav-link u1" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link u2" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link u3" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <div className="container" id="about" style="background-color: white; margin: 10px 5px;padding:51px;">
+<body>
+	<!-- Navigation bar containing links to all pages -->
+	<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+		
+		<a class="navbar-brand site-topic" href="index.html" style="color:coral;font-size: 25px;">
+			HARIE VASHINI</a>
+		<div class="navbar-collapse container-fluid">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"> <a class="nav-link page-topic" href="#about" style="color:#581845;">About</a> </li>
+				<li class="nav-item"> <a class="nav-link page-topic" href="#projects" style="color:#900C3F;">Projects</a> </li>
+				<li class="nav-item"> <a class="nav-link page-topic" href="#contact" style="color:#C70039;">Contact</a> </li>
+			</ul>
+		</div>
+	</nav>
+<div class=page>
+	<div className="container" id="about" style="background-color: white; padding:51px;margin: 10px 0px;">
         <div class="row">
           <div class="column">
-            <h4> Hello! I'm Harie Vashini </h4>
             <br>
-            <p><img src="images/mypic.jpeg" id="image" alt="Harie" width="300px" height="300px">I am pursuing Master of Science in Computer Science at Portland State University, who expects to graduate in June 2021. Aiming to gain experience in a highly challenging and competitive environment and be part of an institution that demands skill and diligence. At present actively seeking internship opportunities.</p>
+            <h4 style="color:#581845;"> Hello! I'm Harie Vashini </h4>
+            <br>
+            <p><img src="images/mypic.jpeg" id="image" alt="Harie" width="300px" height="300px">I am pursuing Master of Science in Computer Science at Portland State University, who expects to graduate in June 2021. Aiming to gain experience in a highly challenging and competitive environment and be part of an institution that demands skill and diligence. At present actively seeking internship, full time opportunities.</p>
             <h5>EDUCATION</h5>
             <p>Completed Bachelor's degree in Information Technology with a GPA of 3.75 from Coimbatore Institute Of Technology, India.</p>
             <h5>AREAS OF INTEREST</h5>
-            <p><li>Machine Learning</li>
-            <li>Artificial Intelligence</li>
+            <p>
             <li>Web Development</li>
-            <li>Database Management systems</li></p>
+            <li>Database Management systems</li>
+            <li>Machine Learning</li>
+            <li>Artificial Intelligence</li></p>
             <h5>SKILLS</h5>
-            <p>Python, C++, JAVA, HTML, CSS, JavaScript, React</p>
+            <p>Python, C++, JAVA, HTML, CSS, JavaScript, PostgreSQL, React</p>
           </div>
         </div>
     </div>
-    <div className="container" id="projects" style="background-color: white; margin: 10px 5px;padding:51px;">
+    <div className="container" id="projects" style="background-color: white;padding:51px;margin: 10px 0px;">
     	<div class="row">
           <div class="column">
-            <h5>PROJECTS</h5>
+            <br>
+            <h5 style="color:#900C3F;">PROJECTS</h5>
+            <h5 style="color:coral;">Graduate projects</h5>
+            <p><b>Dessert Suggestion</b>, created a web application to suggest nearby dessert shops and their famous desserts along with nutrition content. The application also displays recipe information for the given dessert. It is developed using HTML, CSS, Python, flask and bootstrap with GCP’s Datastore as the backend database. Used GCP’s container registry for building the docker image and cloud run to deploy the application. Places API, Recipe API, Nutritionix API are the different APIs used to develop this application.<p>
+            <p><b>To Do App Development and Monitoring</b>, created and deployed a web application using Postgres database backend, integrated with Gunicorn Application Server on GCP. Monitored the traffic to the website using Kibana, Elastic search and maintained the reliability of the site.</p>
             <p><b>Prediction of Wine quality using Random Forest and Decision Tree</b>, choses to explore Decision tree and Random forest algorithms to predict the wine quality as perceived by a wine drinker on the Wine dataset. The project aims at training the models and experimentally determining the effects of various parameters and comparing the results of both the algorithms.</p>
             <p><b>Solving the game of 2048 with Artificial Intelligence</b>, is based on Q learning and the design involves the use of neural networks as the function approximation method. In 2048 there are 4 random components, that is, initial configuration of the game, addition of random tiles after very move, exploration of the agent and unavailability of moves. This approach is based on prioritized experience replay where the model trains to learn best game-playing strategy from the experiences collected.</p>
             <p><b>Custom Kubernetes Scheduler</b>, goal was to develop a custom scheduler for Kubernetes that optimized for a metric different from that of the default scheduler. A custom scheduler that successfully schedules pods on nodes with maximum memory available was developed and tested it against the default one.</p>
             <p><b>X-rates Dashboard using React</b>, created Web application using React, used HTML, JS to display various features like the current and historic currency exchange rates information of many countries along with currency conversion calculator. React-chartjs was used to display bar and line charts for opening and closing rates of the selected currency.</p>
-			<p><b>MongoDB – NoSQL database</b>, used Freeway dataset to work on MongoDB. Designed a data model, inserted the Freeway data into collections and Executed queries using Pymongo.</p>
+			      <p><b>MongoDB – NoSQL database</b>, used Freeway dataset to work on MongoDB. Designed a data model, inserted the Freeway data into collections and Executed queries using Pymongo.</p>
+            <p><b>Comparison of String Searching Algorithms</b>, the motivation behind this project was to discuss various String Searching algorithms,compare and analyze their execution time and space complexity on different length of patterns, etc.</p>
+            <p><b>Internet Relay Chat Application</b>, describes a simple Internet Relay Chat (IRC) protocol by which clients can communicate with each other. The system employs a central server which 'relays' messages that are sent to it to other connected users. Users can join rooms, Users can also send private messages directly to other users.</p>
+            <p><b>Database Design and Implementation - Movies on streaming platforms</b>, Database is a list of movies and their details along with the platforms in which they are streamed. Designed, created the database schema and populated the data to perform complex queries using postgreSQL.</p>
+            <h5 style="color:coral;">Undergrad projects</h5>
+            <p><b>A Hybrid approach for Intrusion Detection using Machine Learning</b> is a project based on preventing the network from malicious behaviours with improved accuracy using Support vector machine as Machine learning algorithm and Random forest as feature selection algorithm.</p>
+            <p><b>Online Supermarket</b> is a web page built using HTML, JSP for the front end and Access Database for back end via JDBC. It enables users to maintain accounts and perform online purchases of the available products.</p>
           </div>
         </div>
     </div>
-    <div className="container" id="contact" style="background-color: white; margin: 10px 5px;padding:51px;">
+    <div className="container" id="contact" style="background-color: white; margin: 10px 0px;padding:51px;">
     	<div class="row">
           <div class="column">
-          	<h5>CONTACT</h5>
-          	<ul>
+          	<h5 style="color:#C70039;">CONTACT</h5>
+          	<ul id="info">
 	          	<li id="connect"><img src="images/phone.png" height="30px">    (503)-267-4231</li>
 		        <li id="connect"><img src="images/gitt.jpeg" height="30px">  <a href="https://github.com/Harievashini">https://github.com/Harievashini</a> </li>
 		        <li id="connect"><img src="images/lin.png" height="30px"> <a href="https://www.linkedin.com/in/harie-vashini-dhamodharasamy-kalpana-973ba4172/"> https://www.linkedin.com/in/harie-vashini-dhamodharasamy-kalpana-973ba4172/</a></li>
-			<li id="connect"><img src="images/mail.png" height="30px">  harievashini.dk@outlook.com</li>
+		        <li id="connect"><img src="images/mail.png" height="30px">  harievashini.dk@outlook.com</li>
 		    </ul>
 	      </div>
 	    </div>
@@ -140,6 +122,7 @@
     <footer>
          Copyright © Harie Vashini 2020 
     </footer>
-  </body>
 
+</div>
+</body>
 </html>
